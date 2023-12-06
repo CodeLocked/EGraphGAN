@@ -28,7 +28,7 @@ window_size = 2
 
 # application and dataset settings
 app = ["link_prediction", "node_classification", "recommendation"][2]
-dataset = ["CA-GrQc", "BlogCatalog", "MovieLens-1M"][2]
+dataset = ["dataset_name", "dataset_name", "dataset_name"][2]
 cache_batch = [2, 10, 5][2]
 
 # path settings
@@ -49,20 +49,20 @@ rcmd_test_filename = data_root + "test.csv"
 rcmd_test_neg_filename = data_root + "test_neg.csv"
 
 #pretrain_embedding
-pretrain_emb_filename_d = "/home/pilab/wzy/test/pre_train/" + app + "/" + dataset + "_pre_train.emb"
-pretrain_emb_filename_g = "/home/pilab/wzy/test/pre_train/" + app + "/" + dataset + "_pre_train.emb"
+pretrain_emb_filename_d = "/location/" + app + "/" + dataset + "_pre_train.emb"
+pretrain_emb_filename_g = "/location/" + app + "/" + dataset + "_pre_train.emb"
 
 #embedding
-emb_filenames = ["/home/pilab/wzy/test/results/" + app + "/" + dataset + "_gen_.emb",
-                 "/home/pilab/wzy/test/results/" + app + "/" + dataset + "_dis_.emb"]
+emb_filenames = ["/location/" + app + "/" + dataset + "_gen_.emb",
+                 "/location/" + app + "/" + dataset + "_dis_.emb"]
 
-result_filename = "/home/pilab/wzy/test/results/" + app + "/" + dataset + ".txt"
+result_filename = "/location/" + app + "/" + dataset + ".txt"
 
-cache_filename = "/home/pilab/wzy/test/cache/" + app + "/" + dataset + ".pkl"
+cache_filename = "/location/" + app + "/" + dataset + ".pkl"
 
-train_detail_filename = ["/home/pilab/wzy/test/results/" + app + "/" + "gen_detail/" + dataset + ".txt",
-                         "/home/pilab/wzy/test/results/" + app + "/" + "dis_detail/" + dataset + ".txt"]
+train_detail_filename = ["/location/" + app + "/" + "gen_detail/" + dataset + ".txt",
+                         "/location/" + app + "/" + "dis_detail/" + dataset + ".txt"]
 
 #model_log = "../../log/"
-dis_state_dict_filename = "/home/pilab/wzy/test/model_params/" + dataset + "_dis.pt"
-gen_state_dict_filename = "/home/pilab/wzy/test/model_params/" + dataset + "_gen.pt"
+dis_state_dict_filename = "/location/" + dataset + "_dis.pt"
+gen_state_dict_filename = "/location/" + dataset + "_gen.pt"
